@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Style change using javaScript </h1>
+<h3 id="demo">This text styling will change on click.</h3>
+<script>
+function myFunction() {
+  document.getElementById("demo").style.padding = "8px"; 
+  document.getElementById("demo").style.color = "white";
+  document.getElementById("demo").style.backgroundColor = "gray";        
+}
+</script>
+<button style="padding:8px;background-color:#ffffff;border:2px solid slateblue; " type="button" onclick="myFunction()">Click to change style</button>
+</body>
+</html>
