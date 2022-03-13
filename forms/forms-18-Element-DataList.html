@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+font-family:arial;}
+form{
+border:2px solid transparent;
+padding:25px 20px;
+border-radius:8px;
+background-color:lightyellow;}
+input{
+border:1px solid transparent;
+border-radius:8px;
+padding:10px;
+background-color:aliceblue;
+outline:none;}
+</style>
+</head>
+<body>
+<h2>The datalist Element</h2>
+<form action="demo.html">
+ <label for="cars">Select Your favourite Car </label> <br><br>
+ <input list="cars" name="cars">
+ <datalist id="cars">
+   <option value="Lamborghini">
+   <option value="Ferrari">
+   <option value="Bugatti">
+   <option value="Mclaren">
+   <option value="Porsche">
+ </datalist> <br><br>
+ <input type="submit">
+</form>
+</body>
+</html>

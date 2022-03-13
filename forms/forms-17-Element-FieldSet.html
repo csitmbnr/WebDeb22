@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+font-family:arial;}
+form{
+border:2px solid transparent;
+padding:25px 20px;
+border-radius:8px;
+background-color:lightyellow;}
+input{
+border:1px solid transparent;
+border-radius:8px;
+padding:10px;
+background-color:aliceblue;
+outline:none;}
+</style>
+</head>
+<body>
+<h2>The fieldset and legend Element</h2>
+<form action="demo.html">
+ <fieldset>
+   <legend>Name</legend>
+   <label for="fname">First name:</label><br>
+   <input type="text" id="fname" name="fname"><br>
+   <label for="lname">Last name:</label><br>
+   <input type="text" id="lname" name="lname"><br><br>
+ </fieldset>
+ <br>
+ <fieldset>
+   <legend>Contact Info</legend>
+   <label for="cno">Contact No</label><br>
+   <input type="tel" id="cno" name="cno"><br>
+   <label for="email">Email</label><br>
+   <input type="email" id="email" name="email"><br><br>
+ </fieldset>
+ <input type="submit" value="Submit">
+</form>
+</body>
+</html>
