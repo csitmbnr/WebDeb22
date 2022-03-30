@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <style>
+    body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:15px;}
+ #getData {
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+  ;
+ }
+ </style>
+ <script>
+ function allowDrop(ev) {
+  ev.preventDefault();
+ }
+
+ function drag(ev) {
+  ev.dataTransfer.setData("image", ev.target.id);
+ }
+
+ function drop(ev) {
+  ev.preventDefault();
+  var fetchData = ev.dataTransfer.getData("image");
+  ev.target.appendChild(document.getElementById(fetchData));
+ }
+ </script>
+</head>
+<body>
+ <h3>Try to Drag the paper into Dustbin:</h3>
+     <img id="dragData"
+  src="https://cdn.pixabay.com/photo/2013/07/12/12/48/garbage-146279_960_720.png"
+  draggable="true"
+  ondragstart="drag(event)"
+  width="100"
+  >
+ <img id="getData"
+  ondrop="drop(event)"
+  ondragover="allowDrop(event)"
+       src="https://cdn.pixabay.com/photo/2021/08/30/22/33/bin-6587274_960_720.png">
+ <br>
+</body>
+</html>
